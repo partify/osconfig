@@ -6,13 +6,31 @@
 # use analog out always
 sudo amixer cset numid=3 1
 
-c=1
-while [ $c -le 5 ]
-do
-  echo "wired internet eye pee address" | festival --tts
-  /sbin/ifconfig eth0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}' | festival --tts
-  echo "wireless internet eye pee address" | festival --tts
-  /sbin/ifconfig wlan0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}' | festival --tts
-  (( c++ ))
-  sleep 10
-done
+echo "wired internet eye pee address" | festival --tts
+/sbin/ifconfig eth0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}' | festival --tts
+echo "wireless internet eye pee address" | festival --tts
+/sbin/ifconfig wlan0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}' | festival --tts
+sleep 10
+
+echo "wired internet eye pee address" | festival --tts
+/sbin/ifconfig eth0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}' | festival --tts
+echo "wireless internet eye pee address" | festival --tts
+/sbin/ifconfig wlan0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}' | festival --tts
+sleep 10
+
+echo "wired internet eye pee address" | festival --tts
+/sbin/ifconfig eth0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}' | festival --tts
+echo "wireless internet eye pee address" | festival --tts
+/sbin/ifconfig wlan0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}' | festival --tts
+sleep 10
+
+echo "wired internet eye pee address" | festival --tts
+/sbin/ifconfig eth0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}' | festival --tts
+echo "wireless internet eye pee address" | festival --tts
+/sbin/ifconfig wlan0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}' | festival --tts
+sleep 10
+
+echo "wired internet eye pee address" | festival --tts
+/sbin/ifconfig eth0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}' | festival --tts
+echo "wireless internet eye pee address" | festival --tts
+/sbin/ifconfig wlan0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}' | festival --tts
